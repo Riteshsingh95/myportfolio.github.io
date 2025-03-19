@@ -1,0 +1,170 @@
+
+/* skill-section */
+
+.skill-head {
+    text-align: center;
+    line-height: 1.3;
+}
+
+.skill-head h2 {
+    font-size: 2.4rem;
+}
+
+.skill-head h2 span {
+    color: var(--main-color);
+    text-shadow: 0 0 1rem var(--main-color);
+}
+
+.skill-head p {
+    font-size: 1.3rem;
+}
+
+.skill-flex {
+    margin-top: 40px;
+    display: flex;
+    height: 30vh;
+    line-height: 3.2;
+}
+
+.skill-main-1 {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.skill-main-2 {
+    width: 45%;
+    margin-left: 20px;
+}
+
+.skill-flex .skill-bar .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+.skill-main-1 .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 40px;
+    position: relative;
+    background-color: #999;
+}
+
+.skill-main-2 .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #999;
+}
+
+.skill-bar .bar span {
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 50px;
+}
+
+
+/* animation for html progres bar */
+
+.skill-bar .bar .html {
+    width: 90%;
+    animation: html 3s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+
+/* animation for css progres bar */
+
+.skill-bar .bar .css {
+    width: 80%;
+    animation: css 3s;
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+
+/* animation for js progres bar */
+
+.skill-bar .bar .javascript {
+    width: 70%;
+    animation: js 3s;
+}
+
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+
+/* animation for python progres bar */
+
+.skill-bar .bar .python {
+    width: 70%;
+    animation: python 3s;
+}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+
+/* animation for c progres bar */
+
+.skill-bar .bar .C-lang {
+    width: 80%;
+    animation: clang 3s;
+}
+
+@keyframes clang {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+
+/* animation for cpp progres bar */
+
+.skill-bar .bar .cpp {
+    width: 65%;
+    animation: cpp 3s;
+}
+
+@keyframes cpp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}

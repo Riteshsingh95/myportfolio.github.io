@@ -1,0 +1,61 @@
+
+/* Services Section */
+
+.services {
+    min-height: 100vh; /* Height ko flexible banaya */
+    height: auto; /* Content ke hisaab se height adjust hogi */
+    padding: 2rem 1rem; /* Padding add ki for proper spacing */
+}
+
+.services h2 {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.services .headingserv{
+    margin-top: 5rem;
+}
+.services .headingserv span {
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.service-container .service-box {
+    flex: 1 1 30rem;
+    background-color: var(--send-bg-color);
+    padding: 2rem 3rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.2rem solid var(--bg-color);
+    transition: 0.5rem ease;
+}
+
+.service-container .service-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.service-box i {
+    font-size: 6rem;
+    color: var(--main-color);
+}
+
+.service-box h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0 1.7rem;
+}
+
+.service-box p {
+    font-size: 1.2rem;
+    margin: 1rem 0 1rem;
+}
+

@@ -1,0 +1,185 @@
+
+
+/* responsivness */
+
+@media (max-width:1200px) {
+    html {
+        font-size: 65%;
+    }  
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .project-box img {
+        width: 100%;
+        height: 390px;
+        transition: 0.5s ease;
+        opacity: 0.7;
+    }
+}
+
+@media(max-width:765px) {
+    
+    #menu-icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 5%;   /* Top-right pe shift kar diya */
+        transform: translateY(-50%);
+    }          
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: -1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0, 5rem 1rem rgba(0, 0, 0, 0.2);
+        display: none;
+        text-align: center;
+    }
+    .navbar a {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .navbar.active {
+        display: block;
+    }
+
+    .home {
+        display: flex;
+        flex-direction:column;
+    }
+    .home-content h3 {
+        font-size: 2.5rem;
+    }
+    .home-content h1 {
+        font-size: 3.6rem;
+    }
+    .home-content {
+        order: 2;
+        text-align: center;
+    }
+    .home-img img{
+        width: 50vw;
+        height: 40vh;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .about-img img {
+        width: 50vw;
+        margin-top: 6rem;
+        height: 40vh;
+    }
+    .about-content {
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+    .about-content h2{
+        text-align: center;
+    }
+        .service-container {
+            flex-direction: column; /* Boxes vertically stack ho jayenge */
+            gap: 1.5rem; /* Spacing optimized */
+        }
+    
+        .service-container .service-box {
+            
+            width: 70%; /* Mobile par full width le lein */
+            padding: 1.5rem 2rem; /* Thoda padding kam kiya for cleaner look */
+            border: 0.1rem solid var(--bg-color); /* Border ko subtle banaya */
+        }
+        .service-box{
+            height: 30%;
+        }
+        .service-box i {
+            font-size: 4rem; /* Icons thoda chhota kiya for balance */
+        }
+    
+        .service-box h3 {
+            font-size: 1.5rem; /* Heading ko compact kiya */
+        }
+    
+        .service-box p {
+           
+            font-size: 1.2rem;/* Description text ko readable size pe adjust kiya */
+            margin: 1rem 0 1rem;
+        }
+        .service-box a{
+            margin-top: 2rem;
+        }
+        .services .headingserv {
+            font-size: 1.8rem; /* Heading size mobile ke liye balanced */
+            margin-top: 10rem; /* Spacing ko reduce kiya */
+        }
+    
+        .service-container .service-box:hover {
+            transform: none; /* Mobile mein hover ka effect hataya, kyunki mobile mein hover ka concept nahi hota */
+        }
+    
+
+        .skill-flex {
+            margin-top: 5rem;
+            flex-direction: column; /* Skills vertically stacked ho jayenge */
+            height: auto; /* Fixed height ki jagah flexible height */
+            gap: 20px; /* Thoda gap add kiya for better spacing */
+        }
+       .skill-head{
+        margin-top: 3rem;
+       }
+        .skill-main-1,
+        .skill-main-2 {
+            width: 100%; /* Mobile ke liye full width */
+            margin-left: 0; /* Extra margin hata diya */
+            padding: 0 15px; /* Thoda padding se layout balanced rahega */
+        }
+    
+        .skill-bar .bar {
+            height: 8px; /* Progress bar ko thoda chota kiya for cleaner look */
+        }
+    
+        .skill-bar .info {
+            font-size: 1rem; /* Mobile par text ka size optimized */
+        }
+    
+        .skill-bar .bar span {
+            background: linear-gradient(90deg, var(--main-color), #00d4ff); /* Gradient look ke liye */
+        }
+    
+        .skill-bar .html {
+            animation-delay: 0.2s;
+        }
+    
+        .skill-bar .css {
+            animation-delay: 0.4s;
+        }
+    
+        .skill-bar .javascript {
+            animation-delay: 0.6s;
+        }
+        .projects .heading{
+            margin-top: 2rem;
+        }
+        .contact {
+            padding: 2rem 1rem; /* Compact padding for small devices */
+        }
+    
+        .contact form .input-box input {
+            width: 100%; /* Full width for mobile input fields */
+        }
+    
+        .contact form .btn {
+            width: 30%; /* Full-width submit button for better access */
+        }
+        .contact .heading{
+            margin-top: 100px;
+        }
+    }
+    
